@@ -6,5 +6,5 @@ Configure browser network parameters with this proxy for all protocols
 docker build -t user/tor-proxy:v1.0 .
 
 # Launch
-docker run -i -t -d --publish 192.168.0.64:3128:8123 user/tor-proxy:v1.0
+docker run -i -t -d --publish 192.168.0.64:3128:8123 user/tor-proxy:v1.0 --name tor-proxy
 
