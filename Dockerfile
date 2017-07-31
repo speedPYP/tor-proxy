@@ -30,8 +30,10 @@ RUN apt-get install -y polipo tor deb.torproject.org-keyring
 ADD etc/polipo/config /etc/polipo/config
 ADD etc/tor/torrc /etc/tor/torrc
 
+RUN chmod 644 /etc/polipo/config
+RUN chmod 644 /etc/tor/torrc
 
 # Expose Ports
 EXPOSE 8123
 
-ENTRYPOINT service tor restart && service polipo restart && bash
+ENTRYPOINT service tor restart && service polipo restart && /bin/bash
