@@ -10,7 +10,7 @@
 proxyAddress = "0.0.0.0"    # IPv4 only
 
 # proxyAddress = "127.0.0.1"
-proxyPort = 8123
+proxyPort = 38123
 
 # If you do that, you'll want to restrict the set of hosts allowed to
 # connect:
